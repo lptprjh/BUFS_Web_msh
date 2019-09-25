@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>9월 18일</title>
+    <style>
+    code {
+        color: white;
+        background-color: black;
+        font-family:monospace;
+        font-size: 90%;
+    }
+
+    del {
+        color: gray;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>&lt;div&gt;블록과 &lt;span&gt;인라인</h1>
+        <div style="background-color: skyblue;padding: 20px">
+            내가 사람의 방언과 천사의 말을 할 지라도 <span style="color:red">사랑</span>이 없으면 소리 나는 구리와 울리는 꽹과리가 되고, <span
+                style="color:red">사랑</span>이 없으면 아무 것도 아니라.
+        </div>
+        <p>~우리 모두 사랑하며 살아요~</p>
+        <hr>
+
+        <h2>이미지 삽입</h2>
+        <p>엘비스 프레슬리의 사진입니다.</p>
+        <img src="../c2/Elvis1.jpg" alt="Elvis" />
+        <img src="../c2/kitae.jpg" alt="황기태사진없음" />
+        <img src="http://img.naver.net/static/www/u/2013/0731/nmms_224940510.gif" alt="나베르" />
+        <hr>
+
+        <h2>리스트 만들기</h2>
+        <ul>
+            <li><b>U</b>norderd <b>l</b>ist라고 써서 ul</li>
+            <li>순서가 없는 리스트입니다.</li>
+            <ul>
+                <li>중첩 리스트: 리스트 안에 리스트를 만들수도 있음.</li>
+            </ul>
+            <ol>
+                <li>순서 없는 거에 순서 있는 거 넣어도 되고, 그 반대도 가능.</li>
+            </ol>
+        </ul>
+        
+        <ol>
+            <li>ul이 unordered list였다면</li>
+            <li>ol은 <b>O</b>rdered <b>l</b>ist</li>
+            <li>순서가 있는 리스트이며, 별도로 정의하지 않는 한 1,2,3이 붙음</li>
+        </ol>  
+
+        <ol type="A">
+            <li><code>&lt;ol type=A&gt;</code>와 같이, 순서가 있는 리스트(ol)에서는 리스트의 마커 종류를 설정할 수 있다.</li>
+            <li>단, HTML5 표준에서는 리스트나 아이템을 꾸미는 모든 작업을 CSS 스타일로 작성하는 것을 권장하고 있다. </li>
+        </ol>
+
+        <ul>
+            <li>제가 좋아하는 것</li>
+            <ul>
+                <li>오락실 리듬게임 <del>이시국에?</del></li>
+                <li>뜨끈한 국밥 대신 시원한 잔치국수</li>
+                <li>언어 배우기</li>
+            </ul>
+            <li>라면 끓이기</li>
+            <ol>
+                <li>물 550ml 붓고 건더기/대파/쪽파 넣고 끓여요.</li>
+                <li>끓으면 스프를 넣고, 그리고 면을 넣어요.</li>
+                <ul>
+                    <li>갑작스러운 끓어오름에 주의!</li>
+                </ul>
+                <li>3분 지나면 계란을 넣고, 취향에 따라 휘젓습니다.</li>
+                <li>1분후 불끄고 옴뇸뇸!</li>
+            </ol>
+        </ul>
+        
+        <dl>
+            <dt><strong>san-i</strong></dt>
+            <dd>건강하다(healthy)
+                <ul>
+                    <li>sana: 건강한</li>
+                    <li>sano: 건강함</li>
+                    <li>malsano: 건강하지 않음</li>
+                    <li>malsanulo: 건강하지 않은 사람 (malsana homo)</li>
+                    <li>malsanejo: 병원 (건강하지 않은 이들의 장소라는 뜻에서)</li>
+                </ul>
+            </dd>
+        </dl>
+
+        <hr>
+        <h3>표 만들기</h3>
+        <table border="1">
+            <caption>표 제목</caption>
+            <thead><tr><th>번호</th><th>이름</th><th>단가</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>밍</td>
+                    <td>132</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Gildong Hong</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="1" width="16em">
+            <caption>비정형 표 연습</caption>
+            <tbody>
+                <tr>
+                    <th rowspan="3">A</th>
+                    <th colspan="2">B</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">C</th>
+                    <th>D</th>
+                </tr>
+                <tr><th>E</th></tr>
+            </tbody>
+        </table>
+
+</body>
+
+</html>
