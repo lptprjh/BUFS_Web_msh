@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>셀렉터 만들기</title>
+    <style>
+      h3, li { /* 태그 이름 셀렉터 */
+        color: brown;
+      }
+
+      div>div>strong { /*자식 셀렉터*/
+          background: yellow;
+      }
+      ul strong { /* 자손 셀렉터 */
+          color: dodgerblue;
+      }
+      .warning { /* 클래스 셀렉터 */
+          color: red;
+      }
+      body.main { /* 클래스 셀렉터 */
+          background: aliceblue;
+      }
+      #list { /* id 셀렉터 */
+          background: mistyrose;
+      }
+      #list span{ /* id 셀렉터 + 자손 셀렉터 */
+          color: forestgreen;
+      }
+      h3:first-letter{ /* 가상 클래스 셀렉터 */
+        color: red;
+      }
+      li:hover { /* 가상 클래스 셀렉터 */
+          background:yellowgreen;
+      }
+
+      table > tr :nth-child(even) {
+        background-color: grey;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h3>Web Programming</h3>
+    <hr />
+    <div>
+      <div>2학기 <strong>학습 내용</strong></div>
+      <ul>
+        <li>HTML5</li>
+        <li><strong>CSS</strong></li>
+        <li>Javascript</li>
+      </ul>
+      <div class="warning">60점 이하는 F!</div>
+      
+    </div>
+    <strong>TODO: pseudo-class</strong>
+    <ul>
+        <li>마우스</li>
+        <ul>
+            <li>:hover</li>
+            <li>:active</li>
+        </ul>
+        <li>폼 요소</li>
+        <ul>
+            <li>:focus</li>
+        </ul>
+        <li>링크</li>
+        <ul>
+            <li>:link</li>
+            <li>:visited</li>
+        </ul>
+        <li>블록</li>
+        <ul>
+            <li>:first-letter</li>
+            <li>:first-line</li>
+        </ul>
+        <li>구조</li>
+        <ul>
+            <li>:nth-child(even)</li>
+            <li>:nth-child(1)</li>
+        </ul>
+        <li>and more...</li>
+    </ul>
+    <div style="width:150px;height:60px;transform:rotate(180deg);">빙글</span>
+
+    <table>
+        <tr><td><td></td></td></tr>
+        <tr><td><td></td></td></tr>
+        <tr><td><td></td></td></tr>
+    </table>
+  </body>
+</html>
