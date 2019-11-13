@@ -1,0 +1,10 @@
+.display div{
+    border: 2px solid yellowgreen;
+    color: blue;
+    background: aliceblue;
+}
+
+.display span {
+    border: 3px dotted red;
+    background: yellow;
+}

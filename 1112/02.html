@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배치</title>
+    <link href="02_display.css" rel="stylesheet" type="text/css"/>
+    <link href="02_position.css" rel="stylesheet" type="text/css"/>
+    <style>
+        body > div {
+            border: 2px double grey;
+            margin: 3em;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h2>배치 프로퍼티</h2>
+    <ul>
+        <li>display</li>
+        <li>position</li>
+        <li>left, right, top, bottom</li>
+        <li>float</li>
+        <li>z-index</li>
+        <li>visibility</li>
+        <li>overflow</li>
+    </ul>
+    
+    <hr>
+
+    <h3><code>display</code> 프로퍼티</h3>
+    <table>
+        <thead><tr>
+            <td>기능</td>
+            <th>block</th>
+            <th>inline</th>
+            <th>inline-block</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                <th>기존 라인에서 시작</th>
+                <td>X</td><td>O</td><td>O</td>
+            </tr>
+            <tr>
+                <th>모든 박스 내에 배치</th>
+                <td>X</td><td>O</td><td>O</td>
+            </tr>
+            <tr>
+                <th>옆에 다른 요소 배치</th>
+                <td>X</td><td>O</td><td>O</td>
+            </tr>
+            <tr>
+                <th>width와 height으로 크기 조절</th>
+                <td>O</td><td>X</td><td>O</td>
+            </tr>
+            <tr>
+                <th>padding, border, margin 조절</th>
+                <td>O</td><td>X</td><td>O</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="display">
+        나는 <div style="display:none">div(none)</div> 입니다. <br><br>
+        나는 <div style="display:inline">div(inline)</div> 입니다. <br><br>
+        나는 <div style="display:inline-block; height:50px">div(inline-block)</div>
+          입니다. <br><br>
+        나는 <div>div <span style="display:block">span(block)</span> 입니다.</div> 
+    </div>
+    
+    <hr>
+
+    <h2>박스의 배치, <code>position</code></h2>
+    <ul>
+        <li>정적 배치: - <code>position: static</code> (기본값)</li>
+        <li>상대 배치: - <code>position: relative</code></li>
+        <li>절대 배치: - <code>position: absolute</code></li>
+        <li>고정 배치: - <code>position: fixed</code></li>
+        <li>유동 배치: - <code>float: left</code> 또는 <code>float: right</code></li>
+    </ul>
+    <div class="position" id="relative">
+        <h3>상대 배치, relative</h3>
+        <hr>
+        <div>T</div>
+        <div id="down">h</div>
+        <div>a</div>
+        <div>n</div>
+        <div id="up">k</div>
+        <div>s</div>
+    </div>
+</body>
+</html>
